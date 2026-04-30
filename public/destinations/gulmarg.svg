@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Gulmarg</title>
+  <desc id="desc">Stylized landscape poster for Gulmarg, Kashmir.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2a43" />
+      <stop offset="55%" stop-color="#3f7697" />
+      <stop offset="100%" stop-color="#d5ecf8" />
+    </linearGradient>
+    <linearGradient id="snow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#dce8ef" />
+    </linearGradient>
+    <linearGradient id="pine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#153e35" />
+      <stop offset="100%" stop-color="#0b231d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)" />
+  <circle cx="904" cy="152" r="58" fill="#f9e3a1" opacity="0.9" />
+  <path d="M0 460 L172 322 L294 414 L460 232 L622 426 L812 250 L978 404 L1200 292 V900 H0 Z" fill="url(#snow)" />
+  <path d="M0 556 L174 454 L330 540 L506 382 L676 570 L890 420 L1088 532 L1200 488 V900 H0 Z" fill="#aac4d2" opacity="0.85" />
+  <path d="M0 672 C198 620 328 638 490 686 C654 734 852 742 1200 646 V900 H0 Z" fill="#eef6fb" />
+  <g fill="url(#pine)">
+    <path d="M128 714 l46 -106 l46 106 z" />
+    <path d="M192 734 l54 -132 l54 132 z" />
+    <path d="M280 726 l42 -100 l42 100 z" />
+    <path d="M864 734 l58 -142 l58 142 z" />
+    <path d="M958 728 l48 -116 l48 116 z" />
+    <path d="M1042 740 l40 -96 l40 96 z" />
+  </g>
+  <text x="96" y="764" fill="#ffffff" font-size="102" font-family="Georgia, serif" font-weight="700" letter-spacing="4">GULMARG</text>
+  <text x="100" y="824" fill="#f9e3a1" font-size="28" font-family="Arial, sans-serif" letter-spacing="10">KASHMIR WINTER ESCAPE</text>
+</svg>

@@ -71,8 +71,8 @@ export const siteContent = {
 
   destinations: [
     { name: 'Srinagar', img: 'https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800&q=80&auto=format&fit=crop', region: 'Kashmir' },
-    { name: 'Gulmarg', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777520647/fahad-puthawala-tTd-jofJnCQ-unsplash_bu5l4a.jpg', region: 'Kashmir' },
-    { name: 'Pahalgam', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777520726/shail-sharma-ELB1sDPY4Zo-unsplash_owgyin.jpg', region: 'Kashmir' },
+    { name: 'Gulmarg', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777523175/gulmarg_jig9kd.jpg', region: 'Kashmir' },
+    { name: 'Pahalgam', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777523410/Pahalgam_rvxrde.jpg', region: 'Kashmir' },
     { name: 'Ladakh', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777520797/speedy-sandy-IJfpVYlRv5I-unsplash_l1ggyf.jpg', region: 'Ladakh' },
     { name: 'Vaishno Devi', img: 'https://res.cloudinary.com/dylix9anb/image/upload/v1777520902/Snowfall_in_Vaishno_Devi_sslwvq.jpg', region: 'Jammu' },
     { name: 'Sonamarg', img: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&auto=format&fit=crop', region: 'Kashmir' },
