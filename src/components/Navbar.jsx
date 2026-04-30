@@ -23,14 +23,31 @@ export default function Navbar() {
       }
     }
     window.addEventListener('scroll', onScroll)
+    onScroll()
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [navLinks])
 
   const handleNav = (e, href) => {
     e.preventDefault()
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-    setMobileOpen(false)
+    const scrollToSection = () => {
+      const el = document.querySelector(href)
+      if (!el) return
+
+      const headerOffset = window.innerWidth < 1024 ? 96 : 120
+      const y = el.getBoundingClientRect().top + window.scrollY - headerOffset
+
+      window.history.replaceState(null, '', href)
+      window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' })
+      setActiveSection(href.replace('#', ''))
+    }
+
+    if (mobileOpen) {
+      setMobileOpen(false)
+      window.setTimeout(scrollToSection, 320)
+      return
+    }
+
+    scrollToSection()
   }
 
   return (

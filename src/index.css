@@ -17,6 +17,13 @@
 
   html {
     font-family: 'Source Sans 3', sans-serif;
+    scroll-padding-top: 96px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 120px;
+    }
   }
 
   body {
