@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-yellow: #F5C518;
+    --brand-dark: #1A1A1A;
+    --brand-light: #F8F5EE;
+    --brand-border: #E0D9CC;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  body {
+    background-color: #F8F5EE;
+    color: #1A1A1A;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #F5C518;
+    color: #1A1A1A;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-yellow text-brand-dark font-display font-semibold tracking-wider uppercase px-8 py-3 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md focus:outline-none focus:ring-2 focus:ring-brand-yellow focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-brand-dark text-brand-dark font-display font-semibold tracking-wider uppercase px-8 py-3 text-sm transition-all duration-200 hover:bg-brand-dark hover:text-brand-yellow hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-offset-2;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl font-bold tracking-tight text-brand-dark uppercase;
+  }
+
+  .industrial-border {
+    @apply border border-brand-border;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+/* Industrial grid texture overlay */
+.grid-texture {
+  background-image: 
+    linear-gradient(rgba(26,26,26,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,26,26,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Yellow accent line */
+.accent-line::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  background-color: #F5C518;
+  margin-bottom: 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8F5EE; }
+::-webkit-scrollbar-thumb { background: #F5C518; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
